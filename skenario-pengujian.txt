@@ -1,0 +1,181 @@
+Skenario Pengujian
+Android Intermediate 2nd Submission Dicoding
+
+===================================================================================
+UNIT TESTING
+===================================================================================
+
+Class-AddStoryViewModelTest
+
+1. when message should return the right data and not be null
+- ensure the data obtained is not null
+- ensure the data obtained is in accordance with the alleged data
+
+2. when loading data should return the right data and not be null
+- ensure the data obtained is not null
+- ensure the data obtained is in accordance with the alleged data
+
+3. verify uploadStory function is working process
+- ensure the uploadStory function works as it should
+- after uploading, make sure the message you get is not null
+- ensure that the message received is in accordance with the alleged message
+
+Class-StoryUserViewModelTest
+
+1. when getUserLoginAuth return the right data and not null
+- ensure the data obtained is not null
+- ensure the data obtained is in accordance with the alleged data
+
+2. verify saveUserLoginAuth function is working process
+- ensure the saveLoginAuth function works as it should
+
+3. when getTokenAuth return the right data and not be null
+- ensure the data obtained is not null
+- ensure the data obtained is in accordance with the alleged data
+
+4. verify saveTokenAuth function is working process`
+- ensure the saveUserLoginAuth function works as it should
+
+5. when getUserName return the right data and not be null
+- ensure the data obtained is not null
+- ensure the data obtained is in accordance with the alleged data
+
+6. verify saveUserName function is working process
+- make sure the saveName function is working properly
+
+Class-ListStoryViewModelTest
+
+1. verify getPagingListStoriesUser is working and Should not return be null
+- ensure the getPagingListStoriesUser function works as intended
+- ensure the data obtained is not null
+- ensure the amount of data as expected
+- ensure the data obtained is in accordance with the alleged data
+
+2. when getPagingListStoriesUser is Empty do not return be null
+- ensure the data obtained is not null
+- ensure if the data is empty, the data obtained is empty (empty)
+
+Class-LoginViewModelTest
+
+1. when login message should return the right data user and not be null
+- ensure the data obtained is not null
+- ensure the data obtained is in accordance with the alleged data
+
+2. when isLoading data user should return the right data and not be nul
+- ensure the data obtained is not null
+- ensure the data obtained is in accordance with the alleged data
+
+3. when login user should return the right login user data and not be null
+- ensure the data obtained is not null
+- ensure the data obtained is in accordance with the alleged data
+
+4. verify getResponseLoginUser function is working process
+- ensure the getResponseLoginUser function works as intended
+- ensure the data obtained after calling this function is not null
+- ensure the data obtained after calling this function matches the predicted data
+
+ Class-MapViewModel
+
+1. when stories should return the right data user user and not be null
+- ensure the data obtained is not null
+- ensure the data obtained is in accordance with the alleged data
+- ensure the amount of data obtained is as expected
+
+2. when message should return the right data user user and not be null
+- ensure the data obtained is not null
+- ensure the data obtained is in accordance with the alleged data
+
+3. when isLoading data should return the right data user and not be null
+- ensure the data obtained is not null
+- ensure the data obtained is in accordance with the alleged data
+
+4. verify getAllStories function is working process
+- ensure the getAllStories function works as intended
+- ensure the data obtained after calling this function is not null
+- ensure the data obtained after calling this function matches the predicted data
+- ensure the amount of data obtained after calling this function as expected
+
+5. verify getAllStories empty should return empty and not be null
+- ensure data is not null
+- ensure if the data is empty, the data obtained is empty (empty)
+
+Class-RegisterViewModel
+
+1. when message should return the right data user and not null
+- ensure the data obtained is not null
+- ensure the data obtained is in accordance with the alleged data
+
+2. when loading register user should return the right data and not be null
+- ensure that the data obtained is not null
+- ensure the data obtained is in accordance with the alleged data
+
+3. verify getResponseRegisterUser function is working process
+- ensure the getResponseRegisterUser function works as intended
+- ensure that the message received after calling this function is not null
+- ensure that the message received after calling this function matches the expected message
+
+Class-StoryRepositoryTest
+
+1. when stories should return the right data user and not be null
+- ensure the data obtained is not null
+- Ensure that the data obtained is in accordance with the alleged data
+- ensure the amount of data obtained is in accordance with the alleged data
+
+2. when message should return the right data user and not be null
+- ensure the data obtained is not null
+- ensure the data obtained is in accordance with the alleged data
+
+3. when isLoading user should return the right data and not null
+- ensure the data obtained is not null
+- Ensure that the data obtained is in accordance with the alleged data
+
+4. when login user should return the right login response and not be null
+- ensure the data obtained is not null
+- Ensure that the data obtained is in accordance with the alleged data
+
+5. verify getResponseUserRegisterUser function is working process
+- ensure the getResponseRegisterUser function works as intended
+- ensure that the message received after calling this function is not null
+- ensure that the message received after calling this function matches the expected message
+
+6. verify getResponseUserLoginUser function is working process
+- ensure the getResponseLogin function works as intended
+- ensure the data obtained after calling this function is not null
+- ensure the data obtained after calling this function matches the predicted data
+
+7. verify getPagingListStoryUser function is working and should not be null
+- ensure the getPagingListStoryUser function works as it should
+- ensure the data obtained is not null
+- ensure the amount of data as expected
+- ensure the data obtained is in accordance with the alleged data
+
+8. verify getAllStories Function is working process
+- ensure the getAllStories function works as intended
+- ensure the data obtained is not null
+- ensure the data obtained is in accordance with the alleged data
+- ensure the amount of data as expected
+
+9. verify uploadStory function is working process
+- ensure the upload function works as it should
+- ensure that the message received after calling this function is not null
+- ensure that the message received is in accordance with the alleged message
+
+
+
+Class-MapLocationConvertTest
+
+1. when lat and lon not null, do not return be null
+- ensure the data obtained is not null
+- ensure the data obtained is in accordance with the alleged data
+
+2. when lat and lon null, should return be null
+- ensure the data obtained is null
+
+3. when location should return the right data user and not be null
+- ensure the data obtained is not null
+- ensure the data obtained is in accordance with the alleged data
+
+4. when latLon null, location do not return be null
+- ensure that when latlng is null, the data obtained is not null
+- ensure the data obtained is in accordance with the alleged data
+

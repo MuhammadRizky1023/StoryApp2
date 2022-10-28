@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_maps"
+        android:layout_width="match_parent"
+        android:layout_height="135dp"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_normal_map"
+        style="@style/floatingMapButton"
+        android:layout_marginBottom="13dp"
+        android:backgroundTint="@color/dark_blue"
+        android:src="@drawable/ic_maps"
+        app:borderWidth="0dp"
+        app:elevation="7dp"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toTopOf="@id/fab_satellite_map"
+        app:layout_constraintEnd_toEndOf="@id/fab_hybrid_map"
+        app:tint="@android:color/white"
+        android:contentDescription="@string/normal_maps" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_satellite_map"
+        style="@style/floatingMapButton"
+        android:layout_marginBottom="13dp"
+        android:background="@drawable/button_background"
+        android:src="@drawable/ic_satellite"
+        app:borderWidth="0dp"
+        app:elevation="7dp"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toTopOf="@id/fab_terrain_map"
+        app:layout_constraintEnd_toEndOf="@id/fab_hybrid_map"
+        app:tint="@android:color/white"
+        android:contentDescription="@string/satelite_maps" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_terrain_map"
+        style="@style/floatingMapButton"
+        android:layout_marginBottom="13dp"
+        android:background="@drawable/button_background"
+        android:src="@drawable/ic_terrain"
+        app:borderWidth="0dp"
+        app:elevation="7dp"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toTopOf="@id/fab_hybrid_map"
+        app:layout_constraintEnd_toEndOf="@id/fab_hybrid_map"
+        app:tint="@android:color/white"
+        android:contentDescription="@string/terrain_maps" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_hybrid_map"
+        style="@style/floatingMapButton"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/button_background"
+        android:src="@drawable/ic_hybrid"
+        app:borderWidth="0dp"
+        app:elevation="7dp"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:tint="@android:color/white"
+        android:contentDescription="@string/hybrid_maps" />
+
+
+    <fragment
+        android:id="@+id/mapping"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        map:layout_constraintBottom_toBottomOf="parent"
+        map:layout_constraintTop_toBottomOf="@id/rv_maps"
+        tools:context=".UI.Activities.MapActivity" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@style/LoadingProgressBar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
